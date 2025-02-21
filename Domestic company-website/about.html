@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们 - 洛安居高端家政公司</title>
+    <!-- 引入CDN资源 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="/Users/maviszeng/Desktop/Domestic company-website/images/家政服务.png" alt="家政服务" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="service-detail.html">服务项目</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ai-assistant.html">智能助手</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">关于我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面头部 -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12 text-center">
+                    <h1 class="display-4">关于我们</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="index.html">首页</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">关于我们</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI助手弹窗 -->
+    <div class="modal fade" id="aiAssistantModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">智能助手</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ai-chat-container">
+                        <div class="chat-messages">
+                            <div class="message ai-message">
+                                <i class="fas fa-robot"></i>
+                                <div class="message-content">
+                                    <p>您好！我是智能家政助手，请问有什么可以帮您？</p>
+                                    <div class="quick-questions">
+                                        <button class="btn btn-sm btn-outline-primary">如何预约服务？</button>
+                                        <button class="btn btn-sm btn-outline-primary">查看服务价格</button>
+                                        <button class="btn btn-sm btn-outline-primary">了解服务内容</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-input">
+                            <input type="text" class="form-control" placeholder="请输入您的问题...">
+                            <button class="btn btn-primary"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 公司简介 -->
+    <section class="about-section py-5 mt-0">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">专业的家政服务提供商</h2>
+                <p class="section-subtitle">致力于为每个家庭提供优质的家政服务</p>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-left">
+                    <p>我们致力于为每个家庭提供优质的家政服务，通过严格的人员筛选、专业的技能培训和完善的服务体系，确保每一位客户都能享受到满意的服务。</p>
+                    <div class="about-features mt-4">
+                        <div class="feature-item">
+                            <i class="fas fa-users"></i>
+                            <div class="feature-content">
+                                <h5>专业团队</h5>
+                                <p>200+ 位专业家政服务人员</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-certificate"></i>
+                            <div class="feature-content">
+                                <h5>资质认证</h5>
+                                <p>全员持证上岗，定期培训</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-heart"></i>
+                            <div class="feature-content">
+                                <h5>服务满意度</h5>
+                                <p>98% 以上客户好评</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="about-image-grid">
+                        <div class="about-image main-image">
+                            <img src="images/about-team.jpg" alt="我们的团队" class="img-fluid">
+                        </div>
+                        <div class="about-image-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">5000+</span>
+                                <span class="stat-label">服务家庭</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">98%</span>
+                                <span class="stat-label">好评率</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">6</span>
+                                <span class="stat-label">年专业服务</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 企业文化 -->
+    <section class="culture-section py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">企业文化</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="fade-up">
+                    <div class="culture-card">
+                        <div class="culture-image">
+                            <img src="images/culture/culture-1.jpg" alt="专业服务">
+                        </div>
+                        <h4>专业服务</h4>
+                        <p>以专业的态度，提供优质的服务</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="culture-card">
+                        <div class="culture-image">
+                            <img src="images/culture/culture-2.jpg" alt="持续培训">
+                        </div>
+                        <h4>持续培训</h4>
+                        <p>定期开展专业培训，提升服务品质</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="culture-card">
+                        <div class="culture-image">
+                            <img src="images/culture/culture-3.jpg" alt="团队建设">
+                        </div>
+                        <h4>团队建设</h4>
+                        <p>重视团队凝聚力，创造良好工作氛围</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 发展历程 -->
+    <section class="history-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">发展历程</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-image">
+                        <img src="images/history/history-1.jpg" alt="创立初期">
+                    </div>
+                    <div class="timeline-content">
+                        <h4>2018年 - 创立初期</h4>
+                        <p>公司成立，开始提供基础家政服务</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-image">
+                        <img src="images/history/history-2.jpg" alt="快速发展">
+                    </div>
+                    <div class="timeline-content">
+                        <h4>2020年 - 快速发展</h4>
+                        <p>服务范围扩大，建立专业培训体系</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-image">
+                        <img src="images/history/history-3.jpg" alt="品牌升级">
+                    </div>
+                    <div class="timeline-content">
+                        <h4>2023年 - 品牌升级</h4>
+                        <p>推出智能化服务平台，提供更优质的服务体验</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 资质认证 -->
+    <section class="certification-section py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">资质认证</h2>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 mb-4" data-aos="zoom-in">
+                    <div class="cert-card">
+                        <img src="images/cert/cert-1.jpg" alt="营业执照" class="img-fluid">
+                        <h5>营业执照</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="cert-card">
+                        <img src="images/cert/cert-2.jpg" alt="服务资质" class="img-fluid">
+                        <h5>服务资质证书</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="cert-card">
+                        <img src="images/cert/cert-3.jpg" alt="ISO认证" class="img-fluid">
+                        <h5>ISO认证证书</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="cert-card">
+                        <img src="images/cert/cert-4.jpg" alt="荣誉证书" class="img-fluid">
+                        <h5>荣誉证书</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section class="contact-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">联系我们</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-7" data-aos="fade-right">
+                    <div class="office-location">
+                        <div class="office-image mb-4">
+                            <img src="images/office-location.jpg" alt="办公地点" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5" data-aos="fade-left">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h5>公司地址</h5>
+                                <p>北京市朝阳区高碑店鲜花工厂</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h5>联系电话</h5>
+                                <p>18210824219</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h5>电子邮箱</h5>
+                                <p>mavis00713@qq.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h5>服务时间</h5>
+                                <p>周一至周日 09:00-21:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2024 洛安居高端家政公司. 保留所有权利</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-decoration-none me-3">隐私政策</a>
+                    <a href="#" class="text-decoration-none">服务条款</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 引入JS资源 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+        
+        // AI助手相关功能
+        document.addEventListener('DOMContentLoaded', function() {
+            const chatMessages = document.querySelector('.chat-messages');
+            const chatInput = document.querySelector('.chat-input input');
+            const sendButton = document.querySelector('.chat-input button');
+            const quickQuestions = document.querySelectorAll('.quick-questions button');
+            
+            // 处理快速问题点击
+            quickQuestions.forEach(button => {
+                button.addEventListener('click', function() {
+                    addUserMessage(this.textContent);
+                    handleAIResponse(this.textContent);
+                });
+            });
+            
+            // 处理发送按钮点击
+            sendButton.addEventListener('click', function() {
+                const message = chatInput.value.trim();
+                if (message) {
+                    addUserMessage(message);
+                    handleAIResponse(message);
+                    chatInput.value = '';
+                }
+            });
+            
+            // 处理输入框回车事件
+            chatInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    const message = this.value.trim();
+                    if (message) {
+                        addUserMessage(message);
+                        handleAIResponse(message);
+                        this.value = '';
+                    }
+                }
+            });
+            
+            // 添加用户消息到聊天界面
+            function addUserMessage(message) {
+                const messageDiv = document.createElement('div');
+                messageDiv.className = 'message user-message';
+                messageDiv.innerHTML = `
+                    <div class="message-content">
+                        <p>${message}</p>
+                    </div>
+                    <i class="fas fa-user"></i>
+                `;
+                chatMessages.appendChild(messageDiv);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+            
+            // 处理AI响应
+            function handleAIResponse(userMessage) {
+                // 模拟AI响应
+                let response = '';
+                if (userMessage.includes('如何预约')) {
+                    response = '您可以通过以下方式预约服务：<br>1. 拨打客服电话<br>2. 在线填写预约表单<br>3. 使用微信小程序预约';
+                } else if (userMessage.includes('服务价格')) {
+                    response = '我们的服务价格根据服务类型和时长有所不同，基础保洁服务起价50元/小时，具体价格请查看服务详情页面。';
+                } else if (userMessage.includes('服务内容')) {
+                    response = '我们提供以下服务：<br>1. 日常保洁<br>2. 深度清洁<br>3. 家电清洗<br>4. 开荒保洁<br>5. 专项清洁';
+                } else {
+                    response = '感谢您的咨询，请问还有什么可以帮您的吗？';
+                }
+                
+                setTimeout(() => {
+                    const messageDiv = document.createElement('div');
+                    messageDiv.className = 'message ai-message';
+                    messageDiv.innerHTML = `
+                        <i class="fas fa-robot"></i>
+                        <div class="message-content">
+                            <p>${response}</p>
+                        </div>
+                    `;
+                    chatMessages.appendChild(messageDiv);
+                    chatMessages.scrollTop = chatMessages.scrollHeight;
+                }, 500);
+            }
+        });
+    </script>
+</body>
+</html> 

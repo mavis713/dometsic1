@@ -1,0 +1,279 @@
+.article-detail {
+    margin-top: 76px;
+}
+
+.main-article {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.article-header h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.article-meta {
+    color: #666;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.article-meta span {
+    margin-right: 1.5rem;
+}
+
+.article-meta i {
+    color: var(--primary-blue);
+    margin-right: 0.5rem;
+}
+
+.sidebar .widget {
+    background: white;
+    border-radius: 20px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* 文章内容样式优化 */
+.article-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.article-intro {
+    font-size: 1.2rem;
+    color: #666;
+    border-left: 4px solid var(--primary-blue);
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+}
+
+.article-content h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin: 3rem 0 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #eee;
+}
+
+.article-content h3 {
+    font-size: 1.4rem;
+    color: #444;
+    margin: 2rem 0 1rem;
+}
+
+.requirement-card, .service-card {
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.service-section {
+    margin: 2rem 0;
+}
+
+.article-content ul {
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+}
+
+.article-content li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.article-content li:before {
+    content: '•';
+    color: var(--primary-blue);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* 侧边栏样式优化 */
+.popular-posts {
+    list-style: none;
+    padding: 0;
+}
+
+.popular-posts li {
+    margin-bottom: 1rem;
+}
+
+.popular-posts a {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    gap: 1rem;
+}
+
+.post-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post-content h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.post-content span {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* 年龄阶段卡片样式 */
+.age-stage-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border-left: 5px solid var(--primary-blue);
+}
+
+.age-stage-card h2 {
+    color: var(--primary-blue);
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+}
+
+.age-stage-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.age-stage-card li {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    position: relative;
+}
+
+.age-stage-card li:before {
+    content: '✦';
+    color: var(--primary-blue);
+    position: absolute;
+    left: 0;
+}
+
+.age-stage-card li strong {
+    color: #444;
+    font-weight: 600;
+}
+
+/* 早教小贴士样式 */
+.tips-section {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 20px;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.tip-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.tip-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.tip-card i {
+    font-size: 2rem;
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+}
+
+.tip-card h4 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.tip-card p {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .age-stage-card {
+        padding: 1.5rem;
+    }
+}
+
+/* 收纳整理文章特定样式 */
+.area-tips {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.tip-item {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.tip-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.tip-item h3 {
+    color: var(--primary-blue);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tip-item i {
+    font-size: 1.4rem;
+}
+
+.article-conclusion {
+    background: linear-gradient(45deg, var(--primary-blue), var(--primary-green));
+    color: white;
+    padding: 2rem;
+    border-radius: 20px;
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.8;
+} 

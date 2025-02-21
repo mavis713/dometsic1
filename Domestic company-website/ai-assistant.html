@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能助手 - 洛安居高端家政公司</title>
+    <!-- 引入CDN资源 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ai-assistant.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="/Users/maviszeng/Desktop/Domestic company-website/images/家政服务.png" alt="家政服务" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="service-detail.html">服务项目</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="ai-assistant.html">智能助手</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">关于我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面头部 -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12 text-center">
+                    <h1 class="display-4">智能助手</h1>
+                    <p class="lead">24小时在线，为您提供专业的家政服务咨询</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 主要内容区 -->
+    <section class="ai-chat-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="chat-container">
+                        <div class="chat-messages">
+                            <div class="message ai-message">
+                                <i class="fas fa-robot"></i>
+                                <div class="message-content">
+                                    <p>您好！我是智能家政助手，很高兴为您服务。请问有什么可以帮您？</p>
+                                    <div class="quick-questions">
+                                        <button class="btn btn-sm btn-outline-primary">如何预约服务？</button>
+                                        <button class="btn btn-sm btn-outline-primary">查看服务价格</button>
+                                        <button class="btn btn-sm btn-outline-primary">了解服务内容</button>
+                                        <button class="btn btn-sm btn-outline-primary">服务范围查询</button>
+                                        <button class="btn btn-sm btn-outline-primary">投诉建议</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-input">
+                            <input type="text" class="form-control" placeholder="请输入您的问题...">
+                            <button class="btn btn-primary"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="ai-features">
+                        <h3>智能助手功能</h3>
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <i class="fas fa-clock"></i>
+                                <div class="feature-text">
+                                    <h5>24小时在线</h5>
+                                    <p>随时解答您的问题</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-comments"></i>
+                                <div class="feature-text">
+                                    <h5>智能对话</h5>
+                                    <p>准确理解您的需求</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-tasks"></i>
+                                <div class="feature-text">
+                                    <h5>服务预约</h5>
+                                    <p>快速完成服务预定</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-headset"></i>
+                                <div class="feature-text">
+                                    <h5>人工客服</h5>
+                                    <p>需要时可转人工服务</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2024 洛安居高端家政公司. 保留所有权利</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-decoration-none me-3">隐私政策</a>
+                    <a href="#" class="text-decoration-none">服务条款</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/ai-assistant.js"></script>
+</body>
+</html> 
